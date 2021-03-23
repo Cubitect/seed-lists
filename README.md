@@ -6,14 +6,14 @@ This repository is a reference for seeds of interest that I found using
 ## Contents
 
 There is a document where I discuss how to find seeds with multiple quad-huts:
-[many_quadhuts.md](https://github.com/Cubitect/seed-lists/many_quadhuts.md).
+[many_quadhuts.md](https://github.com/Cubitect/seed-lists/blob/trunk/many_quadhuts.txt).
 
 Some tables with seeds with four or more quad-huts (1.16) are presented 
-[here](https://htmlpreview.github.com/?https://github.com/Cubitect/seed-lists/mqh_1_16.html).
+[here](https://htmlpreview.github.com/?https://github.com/Cubitect/seed-lists/blob/trunk/mqh_1_16.html).
 
 Complete lists for double quad-huts within 20k blocks are located
-[here](https://github.com/Cubitect/seed-lists/dqh20k_1_12.txt) and 
-[here](https://github.com/Cubitect/seed-lists/dqh20k_1_16.txt) 
+[here](https://github.com/Cubitect/seed-lists/blob/trunk/dqh20k_1_12.txt) and 
+[here](https://github.com/Cubitect/seed-lists/blob/trunk/dqh20k_1_16.txt) 
 for 1.12 and 1.16 respectively. 
 Note that the north-east quad-hut is barely in reach of the AFK spot in each of
 those seeds and will require specialised farm designs to utilize fully. Also up
