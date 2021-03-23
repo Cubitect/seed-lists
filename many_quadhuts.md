@@ -1,13 +1,13 @@
-More than one?
+## Cubiomes - More than one Quad-Hut?
 
-We have found that we can move quad-huts around by transforming the seed, but
-can we have multiple quad-huts in the same world? Well, given that we have an
-exhausted list of all seeds that have a quad-hut at the origin (which I will
-call seed-bases), in order for a seed to contain a second quad-hut, there must
-exist a `moveStructure()` operation on one of these seed bases that gives us a
-second seed that is also in the list. Unfortunately, checking this is not quite
-that straight forwards, since there are at worst round 750k seeds in the list
-and a minecraft world has around `(60M / 512)^2 ~ 1.37x10^10` potential move
+We can move quad-huts around by transforming the seed, but can we have multiple
+quad-huts in the same world? Well, given that we have an exhausted list of all
+seeds that have a quad-hut at the origin (which I will call seed-bases), in
+order for a seed to contain a second quad-hut, there must exist a
+`moveStructure()` operation on one of these seed bases that gives us a second
+seed that is also in the list. Unfortunately, checking this is not quite that
+straight forwards, since there are at worst round 750k seeds in the list and a
+minecraft world has around `(60M / 512)^2 ~ 1.37x10^10` potential move
 transformations, and each result has to be checked against all the other seeds
 in the list. However, we can again exploit that there are only a handful of
 20-bit values that the seed bases can end with (generated from `low20Quad*`).
@@ -170,8 +170,8 @@ restriction, even with the freedom to choose the top 16-bits.
 Below is a full program that finds all double quad-huts for which all eight
 swamp huts are less than 20000 blocks (radially) from the origin. Running this
 code till completion takes some time, but the output can be found
-[here for 1.12](https://github.com/Cubitect/seed-lists/dqh20k_1_12.txt) and 
-[here for 1.16](https://github.com/Cubitect/seed-lists/dqh20k_1_16.txt).
+[here for 1.12](https://github.com/Cubitect/seed-lists/blob/trunk/dqh20k_1_12.txt) and 
+[here for 1.16](https://github.com/Cubitect/seed-lists/blob/trunk/dqh20k_1_16.txt).
 
 ```C
 #include "cubiomes/finders.h"
@@ -298,7 +298,7 @@ quad-huts.
 After some tinkering and a lot of messy code later I have found some seeds that
 have four and even five quad-huts, mostly based on ideal constellations. Some 
 of these can be found 
-[here](https://htmlpreview.github.com/?https://github.com/Cubitect/seed-lists/mqh_1_16.html).
+[here](https://htmlpreview.github.com/?https://github.com/Cubitect/seed-lists/blob/trunk/mqh_1_16.html).
 There almost certainly exist seeds with six or more quad-huts, but they are
 rather difficult to find without further optimizations.
 
